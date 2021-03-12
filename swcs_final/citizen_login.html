@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+
+<html lang ="en">
+
+<head>
+	<meta charset="utf-8" />
+  <title>Citizen Login</title>
+  <style>
+     header {
+      padding: 1px;
+      text-align: center;
+      background: #33cccc;
+      color: white;
+      font-size: 30px;
+      font-family: Source Sans Pro;
+      font-weight : bold;
+      font-size: 60px;
+      height: 80px;
+      width: 500px;
+      display: inline-block;
+      border-radius:30px;
+      margin-left: 40px ;
+    }
+
+    body {
+     background-image: url('images/1.png');
+          height: 100%;
+          /*object-fit: cover;*/
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+    }
+
+    .form
+    {
+      display: block;
+      margin-left: 120px ;
+    }
+
+     form {
+      text-align: center;
+     display: inline-block;
+     border: 3px solid #f1f1f1;
+     height: 260px;
+     width: 300px;
+     background-color: white;
+     border-radius:15px;
+   }
+
+    input[type=text], input[type=password] {
+       width: 90%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+
+    .btn_home{
+      background-color:#ffcc00;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Source Sans Pro;
+    margin: 4px 2px;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+
+    }
+
+    button {
+       background-color: #33cccc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    .btn_home:hover {
+      background-color: #99e6e6;
+    }
+
+  
+</style>
+</head>
+
+<body>
+	<br>
+  <header>Citizen Login</header>
+  <br><br><br>
+  <div class="form">
+    <form action="citizen_login.php" method="POST">
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Email-ID" name="uname" required>
+        <br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <br>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    </form>
+  </div>
+  <br><br><br><br>
+  <a class="btn_home" href="home_page.html">Home</a>
+
+</body>
+</html>
